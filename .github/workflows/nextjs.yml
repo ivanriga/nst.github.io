@@ -45,12 +45,8 @@ jobs:
     #      static_site_generator: next
       - name: Install dependencies
         run: npm install
-      - name: Debug environment variables
-        run: |
-          echo "POSTGRES_URL: ${{ env.POSTGRES_URL }}"
       - name: Debug POSTGRES_URL
-        run: |
-          echo "POSTGRES_URL: ${{ secrets.POSTGRES_URL }}"
+        run:  echo "API_KEY: ${{ secrets.API_KEY }}"
       - name: Build with Next.js
         env:  
           POSTGRES_URL: ${{ secrets.POSTGRES_URL }}  
