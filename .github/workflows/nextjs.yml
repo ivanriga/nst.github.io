@@ -47,7 +47,7 @@ jobs:
         run: npm install
       - name: Debug environment variables
         run: |
-         echo "AUTH_SECRET: ${{ var.POSTGRES_URL }}"
+         echo "AUTH_SECRET: ${{ env.POSTGRES_URL1 }}"
          echo "POSTGRES_URL: ${{ secrets.POSTGRES_URL }}"
       - name: Build with Next.js
         env:  
