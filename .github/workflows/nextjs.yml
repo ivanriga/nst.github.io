@@ -45,6 +45,10 @@ jobs:
     #      static_site_generator: next
       - name: Install dependencies
         run: npm install
+        - name: Debug environment variables
+        run: |
+            echo "AUTH_SECRET: ${{ secrets.AUTH_SECRET }}"
+            echo "POSTGRES_URL: ${{ secrets.POSTGRES_URL }}"
       - name: Build with Next.js
         env:  
           AUTH_SECRET: ${{ secrets.AUTH_SECRET }}  # Use the secret here
