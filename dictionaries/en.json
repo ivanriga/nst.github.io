@@ -1,0 +1,38 @@
+{
+  "server-component": {
+    "welcome": "Welcome"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "start_page": {
+    "Welcome_to_Acme": "Welcome to Acme!",
+    "Login": "Log in",
+    "SignUp": "Sign Up"
+  },
+  "login_page": {
+    "Please_log_in_to_continue": "Please log in to continue.",
+    "Login": "Log in",
+    "SignUp": "Sign Up",
+    "Email": "Email",
+    "Password": "Password",
+    "EnterEmail": "Enter your email address",
+    "EnterPassword": "Enter password"
+  },
+  "signup_page": {
+    "SignUp": "Sign Up",
+    "SignUpTitle": "Sign Up To Get Started!",
+    "Email": "Email",
+    "EnterEmail": "Enter your email address",
+    "Password": "Password",
+    "EnterPassword": "Enter password",
+    "EnterName": "Enter your Name",
+    "Name": "Password",
+    "RetypePassword": "Retype Password",
+    "EnterRetypePassword": "Retype password",
+    "ErrorRetypePassword": "Passwords do not match",
+    "DatabaseError": "Database Error: Failed to Create User.",
+    "GlobalError": "Missing fields. Failed to Create User."
+  }
+}

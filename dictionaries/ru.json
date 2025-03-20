@@ -1,0 +1,39 @@
+{
+  "server-component": {
+    "welcome": "Добро пожаловать"
+  },
+  "counter": {
+    "increment": "Добавление",
+    "decrement": "Уменьшение"
+  },
+  "start_page": {
+    "Welcome_to_Acme": "Добро пожаловать в Acme!",
+    "Login": "Авторизоваться",
+    "SignUp": "Зарегистрироваться"
+  },
+  "login_page": {
+    "Please_log_in_to_continue": "Пожалуйста авторизуйтесь.",
+    "Login": "Авторизоваться",
+    "SignUp": "Зарегистрироваться",
+    "Email": "Электронная почта",
+    "Password": "Пароль",
+    "EnterEmail": "Введите адрес электронной почты",
+    "EnterPassword": "Введите пароль"
+  },
+  "signup_page": {
+    "SignUp": "Зарегистрироваться",
+    "SignUpTitle": "Зарегистрируйтесь, чтобы войти!",
+    "Email": "Электронная почта",
+    "Password": "Пароль",
+    "Name": "Имя",
+    "EnterEmail": "Введите адрес электронной почты",
+    "EnterPassword": "Введите пароль",
+    "EnterName": "Введите ваше имя",
+    "RetypePassword": "Повторите пароль",
+    "EnterRetypePassword": "Повторите пароль",
+    "ErrorRetypePassword": "Пароль не совпадает",
+    "DatabaseError": "Ошибка в базе данных. Не удалось зарегистрироваться.",
+    "GlobalError": "Ошибка ввода. Не удалось зарегистрироваться."
+
+  }
+}
