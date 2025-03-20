@@ -53,11 +53,14 @@ jobs:
         env:  
           POSTGRES_URL: ${{ secrets.POSTGRES_URL }}  # Reference the secret here
         run: npm run build
-     # - name: Upload artifact
-     #   uses: actions/upload-pages-artifact@v3
-     #   with:
-     #     path: ./out
-
+                  npm run export
+      - name: Debug out directory
+        run: |
+          ls -R ./out
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out  # Ensure this points to the correct directory
   # Deployment job
   deploy:
     environment:
