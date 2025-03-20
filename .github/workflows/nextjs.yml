@@ -46,12 +46,15 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Debug environment variables
+    #    run: |
+    #        echo "AUTH_SECRET: ${{ env.AUTH_SECRET }}"
+    #        echo "POSTGRES_URL: ${{ env.POSTGRES_URL }}"
+      - name: Debug POSTGRES_URL
         run: |
-            echo "AUTH_SECRET: ${{ env.AUTH_SECRET }}"
-            echo "POSTGRES_URL: ${{ env.POSTGRES_URL }}"
+            echo "POSTGRES_URL is set to $POSTGRES_URL"
       - name: Build with Next.js
         env:  
-          AUTH_SECRET: ${{ secrets.AUTH_SECRET }}  # Use the secret here
+          #AUTH_SECRET: ${{ secrets.AUTH_SECRET }}  # Use the secret here
           POSTGRES_URL: ${{ secrets.POSTGRES_URL }}  # Use the secret here
         run: npm run build
       - name: Upload artifact
