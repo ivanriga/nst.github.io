@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Debug POSTGRES_URL
-        run:  echo "API_KEY: ${{ secrets.API_KEY }}"
+        run: echo "API_KEY: ${{ secrets.API_KEY }}"
       - name: Build with Next.js
         env:  
           POSTGRES_URL: ${{ secrets.POSTGRES_URL }}  
