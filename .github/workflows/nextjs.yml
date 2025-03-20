@@ -48,10 +48,7 @@ jobs:
       - name: Build with Next.js
         env:  
           POSTGRES_URL: ${{ secrets.POSTGRES_URL }}  # Reference the secret here
-        run: |
-          echo "POSTGRES_URL is set to ${{ secrets.POSTGRES_URL }}"
-          echo "POSTGRES_URL is set to ${{ var.POSTGRES_URL }}"
-          npm run build
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
