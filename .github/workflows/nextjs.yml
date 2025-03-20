@@ -29,6 +29,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+        - name: Check variables
+        run: |
+          echo "POSTGRES_URL: ${{ secrets.POSTGRES_URL }}"
+          echo "API_KEY: ${{ secrets.API_KEY }}"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node
