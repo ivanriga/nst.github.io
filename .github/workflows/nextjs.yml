@@ -60,7 +60,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.next/server  # Ensure this points to the correct directory
+          path: ./.next/server/pages  # Ensure this points to the correct directory
   # Deployment job
   deploy:
     environment:
