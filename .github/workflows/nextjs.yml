@@ -56,11 +56,11 @@ jobs:
     #              npm run export
       - name: Debug out directory
         run: |
-          ls -R ./.next
+          ls -R ./.next/server/app 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.next/server/pages  # Ensure this points to the correct directory
+          path: ./.next/server/app  # Ensure this points to the correct directory
   # Deployment job
   deploy:
     environment:
