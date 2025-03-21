@@ -53,7 +53,7 @@ jobs:
         env:  
           POSTGRES_URL: ${{ secrets.POSTGRES_URL }}  # Reference the secret here
         run: npm run build
-                  npm run export
+    #              npm run export
       - name: Debug out directory
         run: |
           ls -R ./out
